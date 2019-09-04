@@ -1,0 +1,15 @@
+FROM wodby/drupal-php:5.6
+
+USER root
+
+RUN apk update && apk upgrade
+
+RUN apk add ruby ruby-bundler ruby-nokogiri ruby-dev build-base libxml2-dev libxslt-dev libffi-dev ruby-irb ruby-rdoc
+
+RUN apk update && apk add nodejs nodejs-npm && apk add python make g++
+
+RUN apk add --update build-base libffi-dev && \
+    gem update --system && \
+    gem install compass
+
+USER wodby
