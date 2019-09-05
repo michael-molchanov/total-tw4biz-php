@@ -1,4 +1,4 @@
-FROM wodby/drupal-php:5.6-macos
+FROM wodby/drupal-php:5.6-dev-macos-4.13.10
 
 USER root
 
