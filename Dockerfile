@@ -12,4 +12,6 @@ RUN apk add --update build-base libffi-dev && \
     gem update --system && \
     gem install compass
 
+RUN npm install -g grunt-cli
+
 USER wodby
