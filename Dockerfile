@@ -15,3 +15,5 @@ RUN apk add --update build-base libffi-dev && \
 RUN npm install -g grunt-cli
 
 USER wodby
+
+RUN drush @none dl registry_rebuild-7.x
