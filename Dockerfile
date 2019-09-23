@@ -1,4 +1,4 @@
-FROM wodby/drupal-php:5.6-dev-4.13.10
+FROM wodby/drupal-php:7.1-dev-4.13.10
 
 USER root
 
@@ -16,4 +16,4 @@ RUN npm install -g grunt-cli
 
 USER wodby
 
-RUN drush @none dl registry_rebuild-7.x
+RUN drush @none dl -y registry_rebuild-7.x
