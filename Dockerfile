@@ -11,11 +11,6 @@ RUN apk add --update --no-cache \
   libffi-dev \
   openssl \
   openssl-dev \
-  python2 \
-  python2-dev \
-  py2-crcmod \
-  py2-openssl \
-  py2-pip \
   python3 \
   python3-dev \
   py3-crcmod \
