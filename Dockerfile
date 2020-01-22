@@ -1,4 +1,4 @@
-FROM wodby/drupal-php:7.2-dev-4.13.10
+FROM wodby/drupal-php:7.3-dev-4.15.0
 
 USER root
 
